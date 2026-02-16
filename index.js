@@ -145,8 +145,8 @@ function calculateFacultyScores() {
 
 async function generateRandomSchedule() {
     try {
-        console.log("📅 Loading schedule from schedule.json...");
-        const response = await fetch('schedule.json');
+        console.log("📅 Loading schedule from event_schedule.json...");
+        const response = await fetch('event_schedule.json');
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
@@ -157,11 +157,11 @@ async function generateRandomSchedule() {
         // Transform the schedule data into the format expected by the app
         window.scheduleData = [];
         
-        scheduleJSON.days.forEach(dayData => {
-            dayData.stages.forEach(stage => {
-                stage.events.forEach(event => {
+        scheduleJSON.Event_Schedule.forEach(dayData => {
+            dayData.Stages.forEach(stage => {
+                stage.Events.forEach(event => {
                     // Parse time to create timestamp (use start time)
-                    const timeStr = event.time.split(' - ')[0]; // Get start time only
+                    const timeStr = event.Time.split(' - ')[0]; // Get start time only
                     const timeMatch = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i);
                     if (timeMatch) {
                         let hour = parseInt(timeMatch[1]);
@@ -172,26 +172,23 @@ async function generateRandomSchedule() {
                         if (period === 'PM' && hour !== 12) hour += 12;
                         if (period === 'AM' && hour === 12) hour = 0;
                         
-                        // Create cleaner stage/venue display
-                        let venueDisplay = '';
-                        if (stage.stage_number && stage.stage_name && stage.venue) {
-                            venueDisplay = `Stage ${stage.stage_number} - ${stage.stage_name} (${stage.venue})`;
-                        } else if (stage.stage_name && stage.venue) {
-                            venueDisplay = `${stage.stage_name} (${stage.venue})`;
-                        } else if (stage.stage_name) {
-                            venueDisplay = stage.stage_name;
-                        } else if (stage.venue) {
-                            venueDisplay = stage.venue;
-                        } else {
-                            venueDisplay = 'Venue TBA';
-                        }
+                        // Students are already in the event object with proper structure
+                        const participants = (event.Students || []).map(student => ({
+                            NAME: student.Name,
+                            DEPARTMENT: student.Department,
+                            FACULTY: student.Faculty,
+                            GENDER: student.Gender,
+                            'CONTACT NUMBER': student.Contact,
+                            'Email Address': student.Email
+                        }));
                         
                         window.scheduleData.push({
-                            program: event.event,
-                            day: dayData.day,
-                            time: event.time,
-                            venue: venueDisplay,
-                            timestamp: new Date(`2026-02-${16 + dayData.day}T${hour.toString().padStart(2,'0')}:${minute.toString().padStart(2,'0')}:00`)
+                            program: event.Event_Name,
+                            day: dayData.Day,
+                            time: event.Time,
+                            venue: stage.Stage_Name,
+                            timestamp: new Date(`2026-02-${16 + dayData.Day}T${hour.toString().padStart(2,'0')}:${minute.toString().padStart(2,'0')}:00`),
+                            participants: participants
                         });
                     }
                 });
@@ -452,25 +449,8 @@ function renderScheduleList(day) {
     if(events.length === 0) { container.innerHTML = '<div class="text-center mt-5 text-muted">No events scheduled for this day.</div>'; return; }
 
     events.forEach(event => {
-        // Try to match participants with better matching logic
-        let participants = [];
-        const eventName = event.program;
-        
-        // Try exact match first
-        if (window.allData[eventName]) {
-            participants = window.allData[eventName];
-        } else {
-            // Try case-insensitive match or partial match
-            const keys = Object.keys(window.allData);
-            const matchedKey = keys.find(key => 
-                key.toLowerCase() === eventName.toLowerCase() ||
-                key.toLowerCase().includes(eventName.toLowerCase()) ||
-                eventName.toLowerCase().includes(key.toLowerCase())
-            );
-            if (matchedKey) {
-                participants = window.allData[matchedKey];
-            }
-        }
+        // Use participants directly from event object (already included in new format)
+        const participants = event.participants || [];
         
         const result = window.publishedResults.find(r => r.program === event.program);
         const badge = result ? '<span class="badge bg-success mb-2 rounded-pill px-3">Result Published</span>' : '';
@@ -655,4 +635,12 @@ function initResults() {
             </div>
         </div>`;
     }).join('');
+}
+function openModal(src) {
+  document.getElementById('imageModal').style.display = 'flex';
+  document.getElementById('modalImage').src = src;
+}
+
+function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
 }
