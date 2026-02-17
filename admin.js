@@ -47,7 +47,7 @@ function initAdmin() {
 
     // 1. Login Logic
     loginBtn.addEventListener('click', async () => {
-        if (passwordInput.value === '8129326958') {
+        if (passwordInput.value === '8129') {
             loginOverlay.classList.add('d-none');
             adminContent.classList.remove('d-none');
             
