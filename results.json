@@ -1,0 +1,352 @@
+[
+  {
+    "program": "Sanskrit Elocution",
+    "winner": {
+      "NAME": "Thejus C",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-17T16:49:55.074Z"
+  },
+  {
+    "program": "Sanskrit Elocution",
+    "winner": {
+      "NAME": "Muhammed Sadhique S",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-17T16:50:31.171Z"
+  },
+  {
+    "program": "Sanskrit Elocution",
+    "winner": {
+      "NAME": "Athira J",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-17T16:50:57.166Z"
+  },
+  {
+    "program": "Sanskrit Recitation",
+    "winner": {
+      "NAME": "Akshaya SS",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-17T16:51:45.668Z"
+  },
+  {
+    "program": "Sanskrit Recitation",
+    "winner": {
+      "NAME": "Gouriparvathy",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-17T16:52:22.168Z"
+  },
+  {
+    "program": "Sanskrit Recitation",
+    "winner": {
+      "NAME": "Nandana Krishnan P",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-17T16:52:58.760Z"
+  },
+  {
+    "program": "AKSHARASLOKAM SANSKRIT",
+    "winner": {
+      "NAME": "Muhammed Sidhique S",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-17T20:41:37.354Z"
+  },
+  {
+    "program": "AKSHARASLOKAM SANSKRIT",
+    "winner": {
+      "NAME": "Athira J",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-17T20:42:11.482Z"
+  },
+  {
+    "program": "AKSHARASLOKAM SANSKRIT",
+    "winner": {
+      "NAME": "Thejus U",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-17T20:42:11.482Z"
+  },
+  {
+    "program": "RECITATION MALAYALAM",
+    "winner": {
+      "NAME": "Navitha Shibu",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-17T20:46:14.196Z"
+  },
+  {
+    "program": "RECITATION MALAYALAM",
+    "winner": {
+      "NAME": "Sreekuttan S",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-17T20:46:42.300Z"
+  },
+  {
+    "program": "RECITATION MALAYALAM",
+    "winner": {
+      "NAME": "Swathy Lekshmi J",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-17T20:47:17.328Z"
+  },
+  {
+    "program": "Clay Modelling",
+    "winner": {
+      "NAME": "Adithi Subhash",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-17T20:48:33.164Z"
+  },
+  {
+    "program": "Clay Modelling",
+    "winner": {
+      "NAME": "N Krithika",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-17T20:48:52.784Z"
+  },
+  {
+    "program": "Clay Modelling",
+    "winner": {
+      "NAME": "Anjali M",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-17T20:49:11.522Z"
+  },
+  {
+    "program": "Collage",
+    "winner": {
+      "NAME": "Parvana P",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-17T20:49:52.887Z"
+  },
+  {
+    "program": "Collage",
+    "winner": {
+      "NAME": "Rain S Raju",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-17T20:50:13.728Z"
+  },
+  {
+    "program": "Collage",
+    "winner": {
+      "NAME": "Jithudas MH",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-17T20:50:33.462Z"
+  },
+  {
+    "program": "Rangoli",
+    "winner": {
+      "NAME": "Pooajay",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-18T12:42:49.415Z"
+  },
+  {
+    "program": "Rangoli",
+    "winner": {
+      "NAME": "Parvana P",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-18T12:43:06.044Z"
+  },
+  {
+    "program": "Rangoli",
+    "winner": {
+      "NAME": "Kavya Devadas",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-18T12:43:30.120Z"
+  },
+  {
+    "program": "Cartooning",
+    "winner": {
+      "NAME": "N Krithika",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-18T12:44:03.052Z"
+  },
+  {
+    "program": "Cartooning",
+    "winner": {
+      "NAME": "Sivashankar",
+      "FACULTY": "BSCHOOL( IMK,LAW,COMMERCE)"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-18T12:44:29.922Z"
+  },
+  {
+    "program": "Cartooning",
+    "winner": {
+      "NAME": "Sneha S",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-18T12:44:45.628Z"
+  },
+  {
+    "program": "Elocution Tamil",
+    "winner": {
+      "NAME": "Pushparaj Punidha Dharshini",
+      "FACULTY": "ARTS,APPLIED SCIENCE, MUSIC"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-18T12:46:14.110Z"
+  },
+  {
+    "program": "Elocution Tamil",
+    "winner": {
+      "NAME": "Pooajay",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-18T12:46:29.253Z"
+  },
+  {
+    "program": "Elocution Tamil",
+    "winner": {
+      "NAME": "Mithilamaran Theivendran",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-18T12:47:07.208Z"
+  },
+  {
+    "program": "Elocution Hindi",
+    "winner": {
+      "NAME": "Nimisha AS",
+      "FACULTY": "ORIENTAL, EDUCATION"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-18T12:47:34.648Z"
+  },
+  {
+    "program": "Elocution Hindi",
+    "winner": {
+      "NAME": "Prince Kumar Pal",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-18T12:47:56.283Z"
+  },
+  {
+    "program": "Elocution Hindi",
+    "winner": {
+      "NAME": "Namitha M Nair",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-18T12:48:10.766Z"
+  },
+  {
+    "program": "Recitation Hindi",
+    "winner": {
+      "NAME": "Malavika Raghunath",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-18T12:48:47.900Z"
+  },
+  {
+    "program": "Recitation Hindi",
+    "winner": {
+      "NAME": "Anurima S",
+      "FACULTY": "BSCHOOL( IMK,LAW,COMMERCE)"
+    },
+    "position": "3",
+    "points": 1,
+    "timestamp": "2026-02-18T12:49:01.376Z"
+  },
+  {
+    "program": "Recitation Hindi",
+    "winner": {
+      "NAME": "Anna Susan Sabu",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "2",
+    "points": 3,
+    "timestamp": "2026-02-18T12:49:20.804Z"
+  },
+  {
+    "program": "Recitation Hindi",
+    "winner": {
+      "NAME": "Nandana Krishnan PO",
+      "FACULTY": "SOCIAL SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-18T12:49:53.994Z"
+  },
+  {
+    "program": "Elocution Arabic",
+    "winner": {
+      "NAME": "Mohammed Saeed",
+      "FACULTY": "SCIENCE"
+    },
+    "position": "1",
+    "points": 5,
+    "timestamp": "2026-02-18T12:50:53.328Z"
+  }
+]

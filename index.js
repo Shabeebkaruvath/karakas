@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     injectAppStyles(); // Mobile Styles
     renderNavigation();
-    
+    renderFooter();
     // 1. Load Data
     await loadData();
     
@@ -597,7 +597,10 @@ function initLeaderboard() {
                     <div class="small opacity-75 fw-bold text-uppercase" style="font-size:0.7rem">Points</div>
                 </div>
             </div>
-        </div>`;
+        </div>
+          
+        `;
+
     }).join('');
     
     console.log("✅ Leaderboard rendered successfully");
@@ -751,3 +754,37 @@ if ('serviceWorker' in navigator) {
         .catch(err => console.log('Service Worker Failed:', err));
     });
   }
+
+  function renderFooter() {
+    const footer = document.createElement('footer');
+    footer.className = "text-center py-4 mt-auto border-top"; 
+    
+    // Updated HTML with better styling, icons, and structure
+    footer.innerHTML = `
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                
+                <a href="https://www.linkedin.com/in/shabeebkaruvath/" target="_blank" class="text-decoration-none d-inline-flex align-items-center gap-2 footer-link">
+                    <span class="text-uppercase fw-bold text-muted small" style="letter-spacing: 1px; font-size: 0.75rem;">Developed by</span>
+                    <span class="fw-black text-dark" style="font-family: monospace; font-size: 1rem; letter-spacing: -1px;">sk</span>
+                </a>
+
+                <small class="text-muted mt-1" style="font-size: 0.65rem; opacity: 0.7;">
+                    &copy; 2026 Arts Fest
+                </small>
+            </div>
+        </div>
+        
+        <style>
+            .footer-link { transition: transform 0.2s ease, opacity 0.2s; opacity: 0.8; }
+            .footer-link:hover { transform: translateY(-1px); opacity: 1; }
+        </style>
+    `;
+    
+    const main = document.querySelector('main');
+    if (main) {
+        main.after(footer);
+    } else {
+        document.body.appendChild(footer);
+    }
+}
