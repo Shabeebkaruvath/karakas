@@ -77,18 +77,30 @@ function initAdmin() {
             staticFaculties.map(f => `<option value="${f}">${f}</option>`).join('');
     }
 
-    // 3. Points Calculation Logic
+    // 3. Points Calculation Logic (UPDATED)
     function calculatePoints() {
         const typeEl = document.querySelector('input[name="eventType"]:checked');
         const posEl = document.querySelector('input[name="position"]:checked');
         
         if (!posEl || !typeEl) return 0;
+        
         const type = typeEl.value;
         const pos = posEl.value;
         
-        if (type === 'individual') return (pos === '1' ? 5 : (pos === '2' ? 3 : 1));
-        if (type === 'group') return (pos === '1' ? 10 : (pos === '2' ? 6 : 2));
-        return 0;
+        // Group Event Logic
+        if (type === 'group') {
+            if (pos === '1') return 10;
+            if (pos === '2') return 6;
+            if (pos === '3') return 2;
+        } 
+        // Individual Event Logic
+        else if (type === 'individual') {
+            if (pos === '1') return 5;
+            if (pos === '2') return 3;
+            if (pos === '3') return 1;
+        }
+        
+        return 0; // Fallback
     }
 
     document.querySelectorAll('input[name="eventType"], input[name="position"]').forEach(el => {
