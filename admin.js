@@ -87,7 +87,7 @@ function initAdmin() {
         const pos = posEl.value;
         
         if (type === 'individual') return (pos === '1' ? 5 : (pos === '2' ? 3 : 1));
-        if (type === 'group') return (pos === '1' ? 10 : (pos === '2' ? 5 : 3));
+        if (type === 'group') return (pos === '1' ? 10 : (pos === '2' ? 6 : 2));
         return 0;
     }
 
